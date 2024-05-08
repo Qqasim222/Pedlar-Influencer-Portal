@@ -1,0 +1,141 @@
+.login-header {
+  padding: 18px 24px;
+  background: var(--grayf9);
+  .logo-img {
+    width: 62px;
+  }
+}
+.login-holder {
+  .login-left {
+    padding: 0px 24px 0px 24px;
+    .ll-img-box {
+      width: 400px;
+      height: 585px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      object-fit: cover;
+      border-radius: 16px;
+      .login-left-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (min-width: 1400px) {
+        width: 450px;
+        height: 650px;
+      }
+      @media (min-width: 1800px) {
+        width: 450px;
+        height: 650px;
+        // width: 650px;
+        // height: 750px;
+        // object-fit: cover;
+      }
+    }
+  }
+  .login-right {
+    width: 456px;
+    margin: auto;
+    &.l-r-new-space {
+      width: 450px;
+      padding-right: 40px;
+    }
+  }
+  .col4 {
+    max-width: 40%;
+    flex-basis: 40%;
+    @media (min-width: 1400px) {
+      max-width: 45%;
+      flex-basis: 45%;
+    }
+    @media (min-width: 1800px) {
+      max-width: 45%;
+      flex-basis: 45%;
+    }
+  }
+  .col8 {
+    max-width: 60%;
+    flex-basis: 60%;
+    @media (min-width: 1400px) {
+      max-width: 55%;
+      flex-basis: 55%;
+    }
+    @media (min-width: 1800px) {
+      max-width: 55%;
+      flex-basis: 55%;
+    }
+  }
+}
+.width310 {
+  width: 310px;
+}
+
+.new-container {
+  max-width: 1200px;
+  margin: auto;
+  @media (min-width: 1800px) {
+    max-width: 1600px;
+  }
+}
+.mobile-view-marge {
+  @media (max-width: 1199px) {
+    .login-header {
+      padding: 18px 24px;
+      background: var(--grayf9);
+      text-align: center;
+      position: relative;
+      .logo-img {
+        width: 80px;
+      }
+      .lh-backicon {
+        position: absolute;
+        left: 0;
+        margin-top: 4px;
+      }
+    }
+    .login-holder {
+      margin-top: 38px;
+      .login-left {
+        padding: 0px 24px 0px 24px;
+        .ll-img-box {
+          width: 100%;
+          height: 590px;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          object-fit: cover;
+          border-radius: 16px;
+          .login-left-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .login-right {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-grow: 0;
+        // min-height: calc(100vh - 150px);
+      }
+      @media (min-width: 768px) {
+        width: 600px;
+        margin: 38px auto 0px auto;
+      }
+    }
+    .width310 {
+      width: 310px;
+    }
+  }
+}
+.privacyPolicy {
+  font-size: 10px !important;
+}

@@ -1,0 +1,55 @@
+.static-main-view {
+  background-color: #F9F6F2;
+
+  .container-static {
+    width: 1280px;
+    margin: auto;
+
+    @media(min-width: 1600px) {
+      width: 1482px;
+    }
+
+    @media(max-width: 1300px) {
+      width: 1110px;
+    }
+
+    @media(max-width: 1199px) {
+      width: 920px;
+    }
+
+    @media(max-width: 991px) {
+      width: 700px;
+    }
+
+    @media(max-width: 767px) {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+
+  .term-condition-main {
+    .tcm-text-view {
+      width: 82%;
+
+      @media(max-width: 600px) {
+        width: 100%;
+      }
+
+      .tc-head6 {
+        line-height: 24px;
+      }
+
+      .word-break {
+        word-break: break-all;
+      }
+
+      .font-size-64 {
+        font-size: 64px !important;
+
+        @media(max-width: 767px) {
+          font-size: 48px !important;
+        }
+      }
+    }
+  }
+}

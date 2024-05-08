@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "pedlar-dev",
+    "prod": "pedlar-prod"
+  }
+}

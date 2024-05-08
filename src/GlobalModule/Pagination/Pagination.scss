@@ -1,0 +1,74 @@
+.pagination {
+  padding: 20px 20px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    li {
+      button {
+        font-size: 14px;
+        height: 30px;
+        width: 30px;
+        color: var(--secondary);
+        background: transparent;
+        font-weight: 400;
+        position: relative;
+        border: none;
+        outline: none;
+        transition: all 300ms;
+        color: var(--gray61);
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          width: 0%;
+          height: 3px;
+          border-radius: 8px;
+          background: linear-gradient(
+            96.22deg,
+            #13e173 27.28%,
+            #02cdff 110.27%
+          );
+
+          transition: all 300ms;
+          margin: auto;
+        }
+        &:hover,
+        &:active,
+        &:focus,
+        &[aria-current="true"] {
+          font-weight: 400 !important;
+          color: var(--blackd1);
+          &::after {
+            width: 100%;
+            transition: all 300ms;
+          }
+        }
+      }
+      &:first-child {
+        button {
+          width: auto;
+          text-transform: capitalize;
+          &::after {
+            display: none;
+          }
+        }
+      }
+      &:last-child {
+        button {
+          width: auto;
+          text-transform: capitalize;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

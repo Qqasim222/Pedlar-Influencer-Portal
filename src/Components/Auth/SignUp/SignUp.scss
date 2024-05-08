@@ -1,0 +1,12 @@
+.mobile-view-marge{
+    @media(max-width: 1199px) {
+        .fontsize11{
+            @media(min-width: 375px) {
+                font-size: 11px !important;
+            }
+            @media(max-width: 370px) {
+                font-size: 10px !important;
+            }
+        }
+    }
+}

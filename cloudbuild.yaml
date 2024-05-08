@@ -1,0 +1,14 @@
+steps:
+  - name: node:$_NODE_VERSION
+    entrypoint: npm
+    args: ["install"]
+  - name: node:$_NODE_VERSION
+    entrypoint: npm
+    args: ["run", "build:$_ENV"]
+  - name: "gcr.io/$PROJECT_ID/firebase"
+    args:
+      - --config=./firebase-$_ENV.json
+      - deploy
+      - -P
+      - $_ENV
+      - --only=hosting:$PROJECT_ID

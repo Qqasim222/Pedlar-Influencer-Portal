@@ -1,0 +1,193 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --black1c: #1c1b1f;
+  --black1f: #1f1f1f;
+  --gray45: #454545;
+  --gray49: #49454f;
+  --grayf9: #f9f6f2;
+  --gray62: #625b71;
+  --grayee: #eeeeee;
+  --graydd: #dddddd;
+  --grayf5: #d3d3d3;
+  --graye5: #e5e5e5;
+  --purple86: #8652ff;
+  --purpleef: #efe8f5;
+  --success: #23d068;
+  --warning: #ffcc41;
+  --error: #d8232a;
+  --redb3: #b3261e;
+}
+
+.desktop-view-marge {
+  display: block;
+  .logo-img {
+    width: 62px;
+  }
+  .mid-content-holder {
+    padding: 5px 24px 3px 374px;
+    min-height: calc(100vh - 0px);
+  }
+  .share-store-position {
+    position: absolute;
+    bottom: 27px;
+    width: 85%;
+  }
+  .inptandrmnt135 {
+    width: 135px;
+  }
+  .inptandrmnt120 {
+    width: 118px;
+  }
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+.mobile-view-marge {
+  display: none;
+  @media (max-width: 1199px) {
+    display: block;
+    .MuiDrawer-paperAnchorBottom {
+      border-radius: 10px 10px 0px 0px !important;
+    }
+    .logo-img {
+      width: 80px;
+    }
+    &.main-mid-holder {
+      background: var(--grayf9);
+
+      &.mmh-bg-white {
+        background: var(--white);
+      }
+    }
+    &.main-holder {
+      background: var(--grayf9);
+      padding: 0 16px;
+      min-height: 100vh;
+    }
+    .mid-content-holder {
+      padding: 0px 16px 16px 16px;
+      min-height: calc(100vh - 0px);
+    }
+    button {
+      outline: none;
+    }
+    .inptandrmnt {
+      width: 90px;
+
+      p.MuiTypography-body1 {
+        color: var(--black1c);
+      }
+    }
+    .inptandrmnt135 {
+      width: 135px;
+    }
+    .reactour__popover {
+      button[aria-label="Close Tour"] {
+        height: 14px !important;
+      }
+    }
+    .share-store-position {
+      position: fixed;
+      bottom: 26px;
+      right: 18px;
+    }
+  }
+}
+.share-box-orange {
+  background: #f9f6f2;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-added {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 342px;
+  position: fixed;
+  bottom: 23px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+.product-add-error-box {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: var(--error);
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 342px;
+  position: fixed;
+  bottom: 23px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border: 1px solid var(--error);
+  text-align: center;
+  z-index: 999;
+}
+.logout-position {
+  position: absolute;
+  bottom: 27px;
+  width: 85%;
+}
+.reactive-btn {
+  background-color: var(--black1c) !important;
+  color: var(--grayf9) !important;
+  font-size: 16px !important;
+  font-family: "Inter" !important;
+  font-weight: 600 !important;
+  .progress {
+    background-color: transparent !important;
+  }
+}
+.reactive-btn:not(.no-animation):hover:not(:disabled):not(.disabled) {
+  margin-top: 0px !important;
+  padding: 6px 14px !important;
+}
+// .reactour__popover {
+//   div[dir="ltr"] {
+//     button:first-child {
+//       transform: rotate(180deg);
+//     }
+//   }
+// }
+
+
+.app__navigation-dot:hover {
+  background-color: #000;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+
+.ReactCrop__image{
+
+  max-width: 246px !important;
+  max-height: 246px !important;
+
+  object-fit: contain !important;
+
+}
+
+
+.chnagePositionMobile{
+  position: absolute;
+  top: 18%;
+}
+
+
+
+
+

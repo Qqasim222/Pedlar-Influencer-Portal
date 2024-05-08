@@ -1,0 +1,184 @@
+.desktop-view-marge {
+  display: block;
+  .landing-main-holder {
+    .add-banner-holder {
+      background: var(--white);
+      box-shadow: none;
+      border-radius: 0px;
+    }
+    .abh-ms1l-banner-holder {
+      cursor: default !important;
+    }
+    .curated-brands-logo-box {
+      background: var(--white);
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15),
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      width: 170px;
+      height: 170px;
+      padding: 10px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .curated-brands-lb-logo {
+        width: auto;
+        height: auto;
+      }
+    }
+    .col-2width {
+      flex-basis: 19.98%;
+      max-width: 19.98%;
+    }
+    .abh-mh-sec3 {
+      padding: 0 24px;
+      padding-top: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--graydd);
+    }
+  }
+  .landing-contianer {
+    width: 968px;
+    margin: auto;
+  }
+
+  .abh-footer {
+    padding-top: 8px;
+    padding-bottom: 24px;
+    .abh-f-top-holder {
+      display: flex;
+      padding: 0 24px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--graydd);
+      .abh-fth-left {
+        width: 60%;
+      }
+      .abh-fth-right {
+        width: 40%;
+        padding-top: 48px;
+      }
+    }
+    .abh-f-bottom-holder {
+      padding: 24px 24px;
+      // border-bottom: 1px solid var(--graydd);
+      .abh-f-social-icon {
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+.mobile-view-marge {
+  display: none;
+  @media (max-width: 1199px) {
+    display: block;
+    .landing-main-holder {
+      .add-banner-holder {
+        background: var(--white);
+        box-shadow: none;
+        border-radius: 0px;
+        .abh-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 16px 16px;
+          position: sticky;
+          top: 0px;
+          background: var(--white);
+          z-index: 999;
+          .h-cart-icon {
+            cursor: pointer;
+          }
+        }
+      }
+      .abh-ms1l-banner-holder {
+        cursor: default !important;
+      }
+
+      .curated-brands-logo-box {
+        background: var(--white);
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15),
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        width: 121px;
+        height: 121px;
+        padding: 10px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        margin-top: 2px;
+        &:last-child {
+          margin-right: 0px;
+        }
+        .curated-brands-lb-logo {
+          width: auto;
+          height: auto;
+        }
+        @media (min-width: 768px) {
+          width: 160px;
+          height: 160px;
+        }
+        @media (min-width: 991px) {
+          width: 210px;
+          height: 210px;
+        }
+      }
+      .col-2width {
+        flex-basis: 13.98%;
+        max-width: 13.98%;
+      }
+      .abh-mh-sec3 {
+        padding: 0 16px;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--graydd);
+      }
+    }
+    .landing-contianer {
+      width: 100%;
+      margin: auto;
+    }
+
+    .abh-footer {
+      padding-top: 8px;
+      padding-bottom: 24px;
+      .abh-f-top-holder {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--graydd);
+        .abh-fth-left {
+          width: 100%;
+        }
+        .abh-fth-right {
+          width: 100%;
+          padding-top: 48px;
+        }
+      }
+      .abh-f-bottom-holder {
+        padding: 24px 16px;
+        // border-bottom: 1px solid var(--graydd);
+        .abh-f-social-icon {
+          margin-right: 9px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .curated-main-holder {
+      overflow: auto;
+      width: 100%;
+    }
+  }
+}
+.grain-texture {
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
